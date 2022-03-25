@@ -649,14 +649,6 @@ button{
   font-size: 17px;
   font-weight: bold;
 }
-button:hover{
-  transform: scale(1.2);
-  background-color: transparent;
-  border: 2px solid #ff5361;
-  color: #ff5361;
-  transition: .4s;
-  cursor: pointer;
-}
 
 @media screen and (max-width: 1180px){
   .about{
