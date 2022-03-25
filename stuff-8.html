@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stuff Details</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="Style.css">
+
+        <style>
+            .small-img-group{
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .small-img-col{
+                flex-basis: 24%;
+                cursor: pointer;
+            }
+            .stuff select{
+                display: block;
+                padding: 5px 10px;
+            }
+            .stuff input{
+                width: 50px;
+                height: 40px;
+                padding-left: 10px;
+                font-size: 16px;
+                margin-right: 10px;
+            }
+            .stuff input:focus{
+                outline: none;
+            }
+            .buy-button{
+                background: #C68B59;
+                opacity: 1;
+                transition: 0.3s all;
+                border-radius: 3px;
+            }
+            .number{
+                background: #C68B59;
+                border: none;
+                color: #ffffff;
+                border-radius: 3px;
+                background-color: #C68B59;
+            }
+            .specification{
+                padding-left: 15px;
+            }
+        </style>
+
+
+    </head>
+
+    <body>
+
+        <!-- NAVIGATION -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-black py-3 fixed-top">
+            <div class="container">
+              <img src="image/Jadoel_Logo-removebg-preview.png" width="125px"alt="">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i id="bar" class="fa-solid fa-bars"></i></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  
+                    
+                  <li class="nav-item">
+                    <a class="nav-link" href="Base.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="Products.html">Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="About.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Contact-us.html">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a  href="Account.html" style="color: black;"><i class="fa-solid fa-circle-user"></i></a>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </li>
+
+                  
+              </div>
+            </div>
+          </nav>
+
+          <section class="container stuff my-5 pt-5">
+            <div class="row mt-5">
+                <div class="col-lg-5 col-md-12 col-12">
+                    <img class="img-fluid w-100 pb-1" src="image/Telepon (2).jpg" id="MainImage" alt="">
+        
+                    <div class="small-img-group">
+                        <div class="small-img-col">
+                            <img src="image/Telepon (2).jpg" width="100%" class="small-img" alt="">
+                        </div>
+                        <div class="small-img-col">
+                          <img src="image/Telepon (2)-1.jpg" width="100%" class="small-img" alt="">
+                      </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-6 col-md-12 col-12">
+                    <h6>Home / Telepon</h6>
+                    <h3 class="py-4">Telepon Putar Kuno</h3>
+                    <h2>1.250.000 IDR</h2>
+                    <div class="select my-3">
+                       <select name="format" id="format">
+                        <option selected disabled>Select Colour</option>
+                        <option value="silver">Silver</option>
+                      </select>
+                    </div>
+                    <input class="number" type="number" value="1" min="0" max="100">
+                    <a href="Cart-8.html"><button class="buy-button">Add To Cart</button></a>
+                    <h4 class="mt-5 mb-3">Description</h4>
+                    <span>Telepon putar yang disegani oleh banyak orang pada zaman dahulu. Sampai masa kini pun, banyak para kolektor atau pecinta barang antik,
+                          masih mencari keberadaan telepon putar seperti ini. Dengan aura keantikannya sangat kuat, Anda merasakan bagaimana menjadi orang yang mewah
+                          seperti pada zaman dahulu.
+                    </span>
+                    <h4 class="mt-5 mb-3">Specification</h4>
+                    <ul class="specification">
+                        <li>Kondisi barang: Bekas</li>
+                        <li>Berat: 10.000 gram</li>
+                        <li>Asal barang: Lokal</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+          <section id="Featured" class="my-5 pb-5">
+            <div class="container text-center mt-5 py-5">
+                <h3>Other Products</h3>
+                <hr class="mx-auto">
+            </div>
+            <div class="row mx-auto container-fluid">
+                <div onclick="window.location.href='stuff-4.html'"; class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="image/Telepon (1).jpg" alt="">
+                    <div class="star">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="product-name">Telepon Putar Vintage</h5>
+                    <h4 class="product-price">200.000 IDR</h4>
+                    <button class="buy-button">Buy Now</button>
+                </div>
+                <div onclick="window.location.href='stuff-9.html'"; class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="image/Telepon (3).jpg" alt="">
+                    <div class="star">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="product-name">Telepon Retro Kuno</h5>
+                    <h4 class="product-price">2.500.000 IDR</h4>
+                    <button class="buy-button">Buy Now</button>
+                </div>
+                <div onclick="window.location.href='stuff-10.html'"; class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="image/Telepon (4).jpg" alt="">
+                    <div class="star">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="product-name">Satu Set Telepon Kuno</h5>
+                    <h4 class="product-price">1.000.000 IDR</h4>
+                    <button class="buy-button">Buy Now</button>
+                </div>
+              <div onclick="window.location.href='stuff-3.html'"; class="product text-center col-lg-3 col-md-4 col-12">
+                  <img class="img-fluid mb-3" src="image/Radio (1).jpg" alt="">
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h5 class="product-name">RBA8 Radio</h5>
+                  <h4 class="product-price">50.000 IDR</h4>
+                  <button class="buy-button">Buy Now</button>
+              </div>
+            </div>
+        </section>
+
+
+          <footer class="mt-5 py-5">
+            <div class="row container mx-auto pt-5">
+              <div class="footer-one col-lg-3 col-md-6 col-12">
+                <img src="image/Jadoel_Logo__1_-removebg-preview.png" alt="">
+                <p>Jadoel merupakan sebuah website buatan anak bangsa yang dibuat untuk
+                   mengingat barang-barang antik atau jadul yang sudah tidak bisa
+                   ditemukan lagi.
+                </p>
+              </div>
+              <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">Featured</h5>
+                <ul class="text-uppercase list-unstyled">
+                  <li><a href="#">best Seller</a></li>
+                  <li><a href="#">radio</a></li>
+                  <li><a href="#">mesin tik</a></li>
+                  <li><a href="#">jam antik</a></li>
+                  <li><a href="#">mesin jahit</a></li>
+                  <li><a href="#">pajangan setrika</a></li>
+                  <li><a href="#">perangko</a></li>
+                </ul>
+              </div>
+              <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">Contact Us</h5>
+                <ul class="text-uppercase list-unstyled">
+                  <div>
+                    <h6 class="text-uppercase">Address</h6>
+                    <p>Jl. Sumatra No. 16, Bandung, Indonesia</p>
+                  </div>
+                  <div>
+                    <h6 class="text-uppercase">Phone</h6>
+                    <p>6281216354176</p>
+                  </div>
+                  <div>
+                    <h6 class="text-uppercase">Email</h6>
+                    <p>jadoel@gmail.com</p>
+                  </div>
+              </div>
+              <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2">Partner</h5>
+                <div class="row">
+                  <img class="img-fluid w-25 h-100 m-2" src="image/logo-sman3.png" alt="">
+                  <img class="img-fluid w-25 h-100 m-2" src="image/logo-sman3bdg.png" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="copyright mt-5">
+              <div class="row container mx-auto">
+                <div class="col-lg-3 col-md-6 col-12 mb-4">
+                  <img src="image/payment.png" alt="" width="150px">
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 text-nowrap mb-2">
+                  <p><b>Jadoel</b> © 2022. All Rights Reserved</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                  <a href="#"><i class="fa-brands fa-line"></i></a>
+                </div>
+              </div>
+            </div>
+          </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+
+       <script src="Script.js"></script>
+
+    </body>
+</html>

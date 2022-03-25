@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jadoel Website</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="Style.css">
+
+        
+    </head>
+
+    <body>
+
+          <!-- NAVIGATION -->
+          <nav class="navbar navbar-expand-lg navbar-light bg-black py-3 fixed-top">
+            <div class="container">
+              <img src="image/Jadoel_Logo-removebg-preview.png" width="125px"alt="">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i id="bar" class="fa-solid fa-bars"></i></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  
+                    
+                  <li class="nav-item">
+                    <a class="nav-link" href="Base.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Products.html">Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="About.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Contact-us.html">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a  href="Account.html" style="color: black;"><i class="fa-solid fa-circle-user"></i></a>
+                    <a href="Cart.html"><i class="fa-solid fa-cart-shopping active"></i></a>
+                  </li>       
+              </div>
+            </div>
+          </nav>
+
+          <section id="Blog-Home" class="pt-5 mt-5 container">
+                  <h2 class="font-weight-bold pt-5">Shopping Cart</h2>
+                  <hr>
+          </section>
+
+          <section id="cart-container" class="container my-5">
+              <table width="100%">
+                  <thead>
+                      <tr>
+                          <td>Remove</td>
+                          <td>Image</td>
+                          <td>Product</td>
+                          <td>Price</td>
+                          <td>Quantity</td>
+                          <td>Total<td>
+                      </tr>
+                  </thead>
+                  
+                  <tbody>
+                      <tr>
+                          <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                          <td><img src="image/Mesin jahit.png" alt=""></td>
+                          <td><h5>Mesin Jahit Jadul</h5></td>
+                          <td><h5>70.000 IDR</h5></td>
+                          <td><input class="w-25 pl-1 total-1-1" type="text" id="Stuff" onkeyup="hitungStuff()"></td>
+                          <td><input class="pl-1 total-1" type="text" id="hasil_Stuff" placeholder="-"></td>
+                      </tr>
+                  </tbody>
+              </table>
+              <script type="text/javascript">
+                function hitungStuff(angka,prefix)
+                {
+                    
+                    var nilai_Stuff = document.getElementById('Stuff').value;
+                    if (nilai_Stuff == "")
+                    {
+                        document.getElementById('hasil_Stuff').value ="-";
+                    }
+                    else
+                    {
+                        var hasil_Stuff = nilai_Stuff * 70000;
+                        document.getElementById('hasil_Stuff').value = hasil_Stuff;
+                    }
+                }
+            </script>
+          </section>
+
+          <section id="cart-bottom" class="container">
+              <div class="row">
+                  <div class="coupon col-lg-6 col-md-6 col-12 mb-4">
+                      <div>
+                          <h5>Coupon</h5>
+                          <p>Enter Your Coupon Code If You Have It</p>
+                          <input type="text" placeholder="Coupon Code">
+                          <button>Apply Coupon</button>
+                      </div>
+                  </div>
+                  <div class="total col-lg-6 col-md-6 col-12">
+                    <div>
+                        <h5>Cart Total</h5>
+                        <div class="d-flex justify-content-between">
+                            <h6>Subtotal</h6>
+                            <p >70.000 IDR</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h6>Shipping</h6>
+                            <p>Free</p>
+                        </div>
+                        <hr class="second-hr">
+                        <div class="d-flex justify-content-between">
+                            <h6>Total</h6>
+                            <p>70.000 IDR</p>
+                        </div>
+                        
+                        <button class="ml-auto">Checkout</button>
+                    </div>
+                </div>
+              </div>
+          </section>
+
+
+
+
+            <footer class="mt-5 py-5">
+              <div class="row container mx-auto pt-5">
+                <div class="footer-one col-lg-3 col-md-6 col-12">
+                  <img src="image/Jadoel_Logo__1_-removebg-preview.png" alt="">
+                  <p>Jadoel merupakan sebuah website buatan anak bangsa yang dibuat untuk
+                     mengingat barang-barang antik atau jadul yang sudah tidak bisa
+                     ditemukan lagi.
+                  </p>
+                </div>
+                <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                  <h5 class="pb-2">Featured</h5>
+                  <ul class="text-uppercase list-unstyled">
+                    <li><a href="#">best Seller</a></li>
+                    <li><a href="#">radio</a></li>
+                    <li><a href="#">telepon</a></li>
+                    <li><a href="#">jam antik</a></li>
+                    <li><a href="#">mesin jahit</a></li>
+                    <li><a href="#">pajangan setrika</a></li>
+                    <li><a href="#">perangko</a></li>
+                  </ul>
+                </div>
+                <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                  <h5 class="pb-2">Contact Us</h5>
+                  <ul class="text-uppercase list-unstyled">
+                    <div>
+                      <h6 class="text-uppercase">Address</h6>
+                      <p>Jl. Sumatra No. 16, Bandung, Indonesia</p>
+                    </div>
+                    <div>
+                      <h6 class="text-uppercase">Phone</h6>
+                      <p>6281216354176</p>
+                    </div>
+                    <div>
+                      <h6 class="text-uppercase">Email</h6>
+                      <p>jadoel@gmail.com</p>
+                    </div>
+                </div>
+                <div class="footer-one col-lg-3 col-md-6 col-12">
+                  <h5 class="pb-2">Partner</h5>
+                  <div class="row">
+                    <img class="img-fluid w-25 h-100 m-2" src="image/logo-sman3.png" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="image/logo-sman3bdg.png" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="copyright mt-5">
+                <div class="row container mx-auto">
+                  <div class="col-lg-3 col-md-6 col-12 mb-4">
+                    <img src="image/payment.png" alt="" width="150px">
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-12 text-nowrap mb-2">
+                    <p><b>Jadoel</b> © 2022. All Rights Reserved</p>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-12">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-line"></i></a>
+                  </div>
+                </div>
+              </div>
+            </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+
+        <script src="Script.js"></script>
+
+    </body>
+</html>
